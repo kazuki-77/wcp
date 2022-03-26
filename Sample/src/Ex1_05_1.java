@@ -12,9 +12,9 @@
 class Ex1_05_1 {
 	public static void main (String[] args) {
 		
-		int lifetimeWage = 262870000;
+		int itLifetimeWage = 262870000;
 		
-		int marketSize = 13330000;
+		long itMarketSize = 1333000000000L;
 		
 		char kanji = '空';
 		
