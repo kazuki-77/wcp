@@ -6,6 +6,7 @@ class Ex1_10_4 {
 	public static void main (String[] args) {
 		
 		//出力元の2次元配列
+		// 縦が「i」、横が「j」と考える
 		String[][] animals = {
 		                       {"モコ" ,"トイプードル" ,"4歳" ,"メス"},
 		                       {"ポチ" ,"シバイヌ　　" ,"6歳" ,"オス"},
@@ -26,8 +27,18 @@ class Ex1_10_4 {
 		**       ブブ / ブルドッグ　 / 3歳 / メス
 		**       シロ / 秋田犬　　　 / 8歳 / オス
 		*/
-		
-		
+		String display = ""; //　出力データ格納用
+		for(int i = 0; i < animals.length; i++ ) {
+			// 1行分の出力文字を名前(animals[i][0])で初期化
+			// (同時に前ループに格納した値をクリア)
+			display = animals[i][0];
+			// １行分の出力文字を生成
+			// (animals配列の２次元目、インデックス１以降のデータをスラッシュ付きで結合していく)
+			for(int j = 0; j < animals[i].length; j++ ) {
+				display = display + "/" + animals[i][j];
+			}
+			System.out.println(display);
+		}
 		
 		
 		

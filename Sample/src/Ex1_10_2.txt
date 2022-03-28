@@ -3,12 +3,12 @@
 以下、どのようなデータが画面に表示されるでしょう？
 ※プログラムで実行はしないで、紙とペンだけで考えましょう。
 
-	String display = "";
-	for(int i = 1 ; i <= 9  ; i++){
-		display = "";
-		for(int j = 1 ; j <= 9  ; j++){
+	String display = ""; // 変数を宣言
+	for(int i = 1 ; i <= 9  ; i++){ // ループ１　*ループ2が終わり、その下を実行した後に再度繰り返しが実行される
+		display = ""; //　繰り返しの時に元のデータをリセットする
+		for(int j = 1 ; j <= 9  ; j++){ // ループ2
 			display = display + i*j + " ";
 		}
-		System.out.println(display);
+		System.out.println(display); // まずループ2を実行し、処理が終わったら行う
 	}
 
