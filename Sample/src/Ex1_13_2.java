@@ -12,8 +12,8 @@
 ----------------------------------------------------*/
 public class Ex1_13_2 {
 	public static void main (String[] args) {
-		int n = Integer.parseInt(args[0]);
-		switch(n) {
+		int bloodTypeNumber = Integer.parseInt(args[0]);
+		switch(bloodTypeNumber) {
 			case 1:
 				System.out.println("あなたは几帳面な性格の方ですね？");
 				break;
